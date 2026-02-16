@@ -1,0 +1,21 @@
+
+site_name: Jitsi Meet – Source Installer
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.tabs
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+nav:
+  - Home: index.md
+  - Installation: install.md
+  - Prosody: prosody.md
+  - Jicofo: jicofo.md
+  - JVB: jvb.md
+  - Architecture: architecture.md
+  - Troubleshooting: troubleshooting.md

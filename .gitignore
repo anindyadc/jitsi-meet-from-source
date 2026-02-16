@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*/bin/*
+*/include/*
+*/lib/*/site-packages/*
+
+# MkDocs
+site/
+
+# macOS
+.DS_Store
+
+# IDEs and other tools
+.idea/
+.vscode/
+*.swp
+*~
+.#*

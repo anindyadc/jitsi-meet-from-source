@@ -48,14 +48,18 @@ To deploy the documentation to GitHub Pages, follow these steps:
     npm install gh-pages --save-dev
     ```
 
-2.  **Configure `next.config.mjs` (If needed):**
-    If your GitHub Pages site will be hosted in a subdirectory (e.g., `https://your-username.github.io/your-repo-name/`), you must uncomment and set the `basePath` property in `next.config.mjs`:
+2.  **Configure `next.config.mjs`:**
+    Your `next.config.mjs` must be configured for static export. This involves setting `output: 'export'` and disabling image optimization. If deploying to a repository subdirectory (e.g., `https://<username>.github.io/<repo-name>/`), you must also set the `basePath` property.
+
     ```javascript
     // next.config.mjs
     // ...
     export default withNextra({
       output: 'export',
       // basePath: '/your-repo-name',
+      images: {
+        unoptimized: true,
+      },
     })
     ```
 

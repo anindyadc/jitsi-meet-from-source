@@ -7,6 +7,8 @@ const withNextra = nextra({
 
 export default withNextra({
   output: 'export',
-  // Optionally, if deploying to a subdirectory like https://<username>.github.io/<repo-name>/
-  basePath: process.env.NODE_ENV === 'production' ? '/jitsi-meet-from-source' : '',
+  basePath: '/jitsi-meet-from-source',
+  images: {
+    unoptimized: true
+  },
 })
